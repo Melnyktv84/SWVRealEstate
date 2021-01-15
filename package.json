@@ -1,0 +1,23 @@
+{
+  "name": "swvrealestate",
+  "version": "1.0.0",
+  "description": "Automation-SWVRealEstate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviti/SWVRealEstate.git"
+  },
+  "author": "David Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daviti/SWVRealEstate/issues"
+  },
+  "homepage": "https://github.com/daviti/SWVRealEstate#readme",
+  "devDependencies": {
+    "cypress": "^6.2.1"
+  }
+}
