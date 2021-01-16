@@ -2,8 +2,8 @@
 
 context('Navigation', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io')
-    cy.get('.navbar-nav').contains('Commands').click()
+    cy.visit('https://www.superworldapp.com/')
+    cy.get('.btn-link').contains('About').click()
     cy.get('.dropdown-menu').contains('Navigation').click()
   })
 
