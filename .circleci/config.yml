@@ -4,5 +4,4 @@ orbs:
 workflows:
   node-tests:
     jobs:
-       - cypress/run:
-          record: true
+      - node/test
