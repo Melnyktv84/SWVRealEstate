@@ -3,32 +3,32 @@
 context('Navigation', () => {
   beforeEach(() => {
     cy.visit('https://www.superworldapp.com/')
-    cy.get('.btn-link').contains('Help Center').click()
-    cy.get('.MuiButtonBase-root.MuiButton-root.MuiButton-text.nav-button.MuiButton-colorInherit').contains('AR Mobile App').click()
+    cy.get('.btn-link').contains('About').click()
+    cy.get('.MuiButtonBase-root.MuiListItem-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiListItem-gutters.MuiListItem-button').contains('Media').click()
   })
 
   it('cy.go() - go back or forward in the browser\'s history', () => {
-    // https://on.cypress.io/go
+    // https://www.superworldapp.com/
 
-    cy.location('pathname').should('include', 'AR Mobile App')
+    cy.location('pathname').should('include', '/about/media/')
 
     cy.go('back')
-    cy.location('pathname').should('not.include', 'AR Mobile App')
+    cy.location('pathname').should('not.include', '/about/media/')
 
     cy.go('forward')
-    cy.location('pathname').should('include', 'AR Mobile App')
+    cy.location('pathname').should('include', '/about/media/')
 
     // clicking back
-    cy.go(-1)
-    cy.location('pathname').should('not.include', 'AR Mobile App')
+    // cy.go(-1)
+    // cy.location('pathname').should('not.include', 'Media')
 
     // clicking forward
     cy.go(1)
-    cy.location('pathname').should('include', 'AR Mobile App')
+    cy.location('pathname').should('include', '/about/media/')
   })
 
   it('cy.reload() - reload the page', () => {
-    // https://on.cypress.io/reload
+    //https://www.superworldapp.com/
     cy.reload()
 
     // reload the page without using the cache
@@ -36,7 +36,7 @@ context('Navigation', () => {
   })
 
   it('cy.visit() - visit a remote url', () => {
-    // https://on.cypress.io/visit
+    // https://www.superworldapp.com/
 
     // Visit any sub-domain of your current domain
 
