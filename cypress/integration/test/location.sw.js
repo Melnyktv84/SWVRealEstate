@@ -6,12 +6,12 @@ context('Location', () => {
   })
 
   it('cy.hash() - get the current URL hash', () => {
-    // https://on.cypress.io/hash
+    // https://www.superworldapp.com/hash
     cy.hash().should('be.empty')
   })
 
   it('cy.location() - get window.location', () => {
-    // https://on.cypress.io/location
+    // https://www.superworldapp.com/location
     cy.location().should((location) => {
       expect(location.hash).to.be.empty
       expect(location.href).to.eq('https://www.superworldapp.com/')
@@ -27,7 +27,7 @@ context('Location', () => {
   })
 
   it('cy.url() - get the current URL', () => {
-    // https://on.cypress.io/url
+    // https://www.superworldapp.com/url
     cy.url().should('eq', 'https://www.superworldapp.com/')
   })
 })
