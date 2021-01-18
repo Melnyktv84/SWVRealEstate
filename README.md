@@ -10,3 +10,6 @@ Run ‘npm init’ to install node modules
 Run  ‘npm install’ to install any dependencies
 Run ‘npm install cypress --save-dev’ to install cypress
 Run  ‘$(npm bin)/cypress open’ to open cypress 
+
+Check that docker hub ran 
+https://hub.docker.com/repository/docker/daviti/superworld
