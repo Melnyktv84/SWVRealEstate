@@ -13,3 +13,5 @@ Run  ‘$(npm bin)/cypress open’ to open cypress
 
 Check that docker hub ran 
 https://hub.docker.com/repository/docker/daviti/superworld
+
+CircleCi build https://app.circleci.com/pipelines/github/daviti
