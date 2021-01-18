@@ -15,3 +15,6 @@ Check that docker hub ran
 https://hub.docker.com/repository/docker/daviti/superworld
 
 CircleCi build https://app.circleci.com/pipelines/github/daviti
+
+Work in progress 
+Grapahan and Promethius 
