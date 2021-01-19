@@ -17,4 +17,4 @@ https://hub.docker.com/repository/docker/daviti/superworld
 CircleCi build https://app.circleci.com/pipelines/github/daviti
 
 Work in progress 
-Grapahan and Promethius 
+Grafan and Prometheus 
