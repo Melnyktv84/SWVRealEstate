@@ -1,4 +1,4 @@
-#Setting up testing environment for automation
+# Setting up testing environment for automation
 
 Clone github repo
 
@@ -32,17 +32,17 @@ npm install cypress
 
 
 
-Check that docker hub ran 
+# Check that docker hub ran 
 https://hub.docker.com/repository/docker/daviti/superworld
 
-CircleCi build https://app.circleci.com/pipelines/github/daviti
+# CircleCi build https://app.circleci.com/pipelines/github/daviti
 
 Work in progress 
 Grafan and Prometheus 
 
 
 
-Download and set up metamask extensions for chrome, safari, edge or brave extension https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
+# Download and set up metamask extensions for chrome, safari, edge or brave extension https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
 When setting up the Metamask extension, make sure to save the 12 word passphrase in case you need to log in to your account.
 Change  Metamask wallet (https://metamask.io) from Mainnet (real ETH) to Ropsten (test ETH) 
 NOTE: Make sure you have Metamask open and connected to Superworld in order to get a token. Token will arrive in a couple of minutes.
