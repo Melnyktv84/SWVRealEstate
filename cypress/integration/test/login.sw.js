@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-describe('My First Test', () => {
-  it('Does not do much!', () => {
+describe('Log in to Superworld', () => {
+  it('logs in to purchase plot of land', () => {
     expect(true).to.equal(true)
     cy.visit('https://www.superworldapp.com/')
     cy.contains('Get Started').click()

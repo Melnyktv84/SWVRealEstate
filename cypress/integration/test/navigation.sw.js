@@ -3,8 +3,11 @@
 context('Navigation', () => {
   beforeEach(() => {
     cy.visit('https://www.superworldapp.com/')
-    cy.get('.btn-link').contains('About').click()
-    cy.get('.MuiButtonBase-root.MuiListItem-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiListItem-gutters.MuiListItem-button').contains('Media').click()
+      //need an if statement for a popup widget the subscribe window pops right away
+    cy.wait(6000)
+    cy.get('.leadinModal-close').click({force: true})
+    cy.get('.MuiButtonBase-root.MuiButton-root.MuiButton-text.dropdown-button.MuiButton-colorInherit').contains('About').trigger('mouseover',{force: true})
+    cy.contains('Media').click()
   })
 
   it('cy.go() - go back or forward in the browser\'s history', () => {
