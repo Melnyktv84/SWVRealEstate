@@ -1,0 +1,6 @@
+scrape_configs:
+  - job_name: swvrestate
+    metrics_path: /swvrestate/metrics
+    static_configs:
+      - targets:
+        - '{{SWVRESTATE_HOST}}'
