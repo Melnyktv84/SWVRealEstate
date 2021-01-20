@@ -1,18 +1,33 @@
 #Setting up testing environment for automation
+
 Clone github repo
+
 Create an account if you don’t have one 
+
 git clone  SWVRealEstate.git
+
 Or download file or open it with github desktop
+
 Branch off from master
+
 Cd to SWVRealEstate /  branch on your terminal or cmd 
+
 Set up Cypress.io  (read more about it Installing Cypress )
+
 Make sure you have npm installed (Mac or Windows npm | get npm (npmjs.com)) 
+
 Make sure you have node installed (Mac or Windows Download | Node.js)
+
 Run ‘npm install cypress’ to install cypress
+
 If you get this error 
+
 \SWVRealEstate-master\node_modules\.bin\cypress (Windows)
+
 /SWVRealEstate-master/node_modules/.bin/cypress (Mac)
+
 (remove the cypress file from the .bin folder)
+
 npm install cypress
 
 
