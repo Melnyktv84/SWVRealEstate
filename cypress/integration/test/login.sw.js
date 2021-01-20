@@ -1,12 +1,17 @@
 /// <reference types="cypress" />
-
-context('Actions', () => {
-  beforeEach(() => {
+describe('My First Test', () => {
+  it('Does not do much!', () => {
+    expect(true).to.equal(true)
     cy.visit('https://www.superworldapp.com/')
-    cy.click('MuiButton-label')
+    cy.contains('Get Started').click()
     cy.wait(4000)
     cy.contains('BUY REAL ESTATE').click()
   })
+})
+
+
+
+
 
   // // https://on.cypress.io/interacting-with-elements
   //
@@ -15,5 +20,3 @@ context('Actions', () => {
   //   cy.contains('BUY REAL ESTATE').click()
   //   }
   // )
-
-)}
