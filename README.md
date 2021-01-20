@@ -30,6 +30,9 @@ If you get this error
 
 npm install cypress
 
+Run .\node_modules\.bin\cypress open (windows)
+Run $(npm bin)/cypress open ( Mac) 
+
 
 
 # Check that docker hub ran 
