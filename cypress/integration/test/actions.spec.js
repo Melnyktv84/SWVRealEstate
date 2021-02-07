@@ -15,13 +15,13 @@ context('Actions', () => {
       // .type() with special character sequences
       .type('{leftarrow}{rightarrow}{uparrow}{downarrow}')
       .type('{del}{selectall}{backspace}')
-
+  .wait(1000)
       // .type() with key modifiers
       .type('{alt}{option}') //these are equivalent
       .type('{ctrl}{control}') //these are equivalent
       .type('{meta}{command}{cmd}') //these are equivalent
       .type('{shift}')
-
+.wait(1000)
       // Delay each keypress by 0.1 sec
       .type('slow.typing@email.com', { delay: 100 })
       .should('have.value', 'slow.typing@email.com')
